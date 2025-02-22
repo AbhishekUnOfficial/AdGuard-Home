@@ -9,3 +9,6 @@ services:
       - '3000:3000/tcp'
       - '8081:80/tcp'
       - '8443:443/tcp'
+    volumes:
+      - ./workdir:/opt/adguardhome/work
+      - ./confdir:/opt/adguardhome/conf
